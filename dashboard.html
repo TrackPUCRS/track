@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./idearLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <script src="./scripts/dashboard.js"></script>
+    <script src="./scripts/logIn.js"></script>
+    <title>TRACK</title>
+</head>
+<body>
+        <nav  id="menu" class="navBar">
+                <a href="index.html" id="home"> Início </a>
+                <a href="dashboard.html" id="about"> Painel de Ideias </a>
+                <a href="rate.html" id="about"> Avaliar Sistema </a>
+                <a onclick="userLogOut()" id="logout"> Sair </a>
+                <a onclick="closeMenu()" id="closeBtn" > X </a>
+        </nav>
+        <a id="logo" href="index.html"> TRACK </a>
+        <a onclick="showMenu()" id="menuIcon">
+            <img style="width: 30px" src="./assets/images/menu.png" alt="Menu Icon"> 
+        </a>
+    <div id="dashboardDiv">
+        <h1 id="title"> IDEIAS </h1>
+        <button id="newIdeaBtn" onclick="createNewIdea()"> Começar </button>
+        <div id="ideaDiv">
+        </div>
+    </div>
+
+
+ <div id="idea">
+        <h1 id="ideaTitle">  </h1>
+        <h2 id="ideaScore"></h2>
+        <h2 id="ideaTips"></h2>
+        <button id="continueFormBtn" onclick="goToDashboard()" > Voltar </button>
+    </div>
+
+
+
+    <div id="continueForm">
+        <div >
+            <img id="image" src="../assets/images/feedbackImg.svg" alt="User Completed Task">
+        </div>
+        <div id="questionBlock"> 
+        </div>
+        <h2 id="nextStep">  </h2>
+        <div id="tips">
+        <h3 id="tipsH3" ></h3>
+        </div>
+        <button id="sendBtn" onclick="checkAnswers()" > Enviar </button>
+        <button id="newFormBtn" onclick="goToDashboard()" >Painel de Ideias</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./scripts/dashboard.js"></script>
+    <link rel="shortcut icon" href="idearLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/landingPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>SAIDR</title>
+</head>
+<body>        
+    <nav  id="menu" class="navBar">
+            <a href="index.html" id="home"> Início </a>
+            <a href="./about.html" id="about"> Sobre </a>
+            <a href="logIn.html" id="login"> Entrar </a>
+            <a href="signUp.html" id="signup"> Cadastre-se </a>
+            <a onclick="closeMenu()" id="closeBtn" > X </a>
+    </nav>
+    <a id="logo" href="index.html"> TRACK </a>
+    <a onclick="showMenu()" id="menuIcon">
+        <img style="width: 30px" src="./assets/images/menu.png" alt="Menu Icon"> 
+    </a>
+    
+    <div class="mainDiv">
+        <div class="head">
+            <h1 id="title"> TRACK </h1>
+            <p id="description" >
+                    O TRACK é a ferramenta ideal para a classificação e 
+                    desenvolvimento de suas ideias de negócio.
+            </p>
+            <button  id="signUpBtn" onclick="startNowBtn()"> COMEÇAR AGORA </button>
+        </div>
+    </div>
+    <img id="bg" src="./assets/images/bgMobile.png" alt="backgroundStyle">
+</body>
+</html>

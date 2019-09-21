@@ -1,0 +1,126 @@
+body{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 10  0%;
+    z-index: 10;
+    font-size: 25px;
+    text-align: center;
+    animation: menuAnimation 0.5s forwards ease-in-out ;
+  }
+
+  @keyframes menuAnimation {
+      from { height: 0% ; font-size: 0px }
+      to{ height: 100% ; font-size: 25px}
+  }
+  
+  #logo{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    top:20px;
+    padding-left: 20px;
+    color: black;
+  }
+
+.navBar a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    top: 30%;
+    margin: 25px;
+  }
+
+  #closeBtn{
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 5px;
+    right: 5px
+  }
+
+  #menuIcon{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+.content{
+    display: flex;
+    position: relative;
+    top: 15px;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}  
+
+.header{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 15px;
+    width: 90%;
+}
+
+#ratingsTitle{
+    text-align: center;
+    font-size: 31px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+#ratingDiv{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-top: 1px solid lightgray;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+#ratingTitle{
+  display: block;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#ratingBody{
+  display: block;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.698);
+}

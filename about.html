@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="shortcut icon" href="./idearLogo.png" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <script src="./scripts/dashboard.js"></script>
+    <script src="./scripts/about.js"></script>
+    <script src="./scripts/logIn.js"></script>
+    <title>TRACK</title>
+</head>
+<body>
+        <nav  id="menu" class="navBar">
+                <a href="index.html" id="home"> Início </a>
+                <a href="about.html" id="about"> Sobre </a>
+                <a href="logIn.html" id="login"> Entrar </a>
+                <a href="signUp.html" id="signup"> Cadastre-se </a>
+                <a onclick="closeMenu()" id="closeBtn" > X </a>
+        </nav>
+        <a id="logo" href="index.html"> TRACK </a>
+        <a onclick="showMenu()" id="menuIcon">
+            <img style="width: 30px" src="./assets/images/menu.png" alt="Menu Icon"> 
+        </a>
+    <div class="content">
+        <div class="header">
+                <h1 id="title" > Sobre o TRACK </h1>
+                <p id="saidrDescription" > O TRACK foi criado com o intuito de facilitar e agilizar o processo de classificação de ideas. </p>
+        </div>
+        <h2 id="ratingsTitle" > - AVALIAÇÕES - </h2>
+        <div id="ratings" class="ratings">
+        </div>
+    </div>
+</body>
+</html>

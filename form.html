@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <link rel="shortcut icon" href="./idearLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <script src="./scripts/dashboard.js"></script>
+    <script src="./scripts/logIn.js"></script>
+    <title>TRACK</title>
+</head>
+<body>
+    <nav  id="menu" class="navBar">
+            <a href="index.html" id="home"> Início </a>
+            <a href="dashboard.html" id="about"> Painel de Ideias </a>
+            <a onclick="userLogOut()" id="logout"> Sair </a>
+            <a onclick="closeMenu()" id="closeBtn" > X </a>
+    </nav>
+    <a id="logo" href="index.html"> TRACK </a>
+    <a onclick="showMenu()" id="menuIcon">
+        <img style="width: 30px" src="./assets/images/menu.png" alt="Menu Icon"> 
+    </a>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h1 id="modalTitle" > Digite o nome de sua ideia, caso ainda não possua uma ideia de negócio repita novamente e seu Nome e Sobrenome, caso você tenha uma ideia mas ela ainda não possui nome, escreva "Ideia Sem Nome" : </h1>
+            <input type="text" name="ideaName" id="ideaName" placeholder="Nome" >
+            <button id="cancelBtn" onclick="goToDashboard()"> Cancelar </button>
+            <button id="continueBtn" onclick="hideModal()" > Continuar </button>
+        </div>
+    </div>
+    <!--
+            <div >
+        <img id="image" src="./assets/images/feedbackImg.svg" alt="User Completed Task">
+    </div>
+    -->
+    <div id="questionBlock"> 
+    </div>
+    <h2 id="nextStep"> Muito Obrigado pelas respostas, através destas informações iremos preparar e modular p conteúdo do evento para que você aproveito ao máximo . </h2>
+    <div id="tips">
+    <h3 id="tipsH3" ></h3>
+    </div>
+    <button id="sendBtn" onclick="checkAnswers()" > Continuar </button>
+    <button id="newFormBtn" onclick="goToDashboard()" >Painel de Ideias</button>
+</body>
+</html>

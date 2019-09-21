@@ -1,0 +1,452 @@
+  body{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  #menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    font-size: 25px;
+    text-align: center;
+    animation: menuAnimation 0.5s forwards ease-in-out ;
+  }
+
+  @keyframes menuAnimation {
+      from { height: 0% ; font-size: 0px }
+      to{ height: 100% ; font-size: 25px}
+  }
+  
+  #logo{
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    top:20px;
+    left: 20px;
+    color: black
+  }
+
+.navBar a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    top: 30%;
+    margin: 25px;
+  }
+
+  #closeBtn{
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 5px;
+    right: 5px
+  }
+
+  #menuIcon{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .idea{
+    display: none;
+  }
+
+  #ideaTitle{
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+  }
+
+  #ideaScore{
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 50%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #ideaTips{
+    display: block;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px
+  }
+
+  #continueFormBtn{
+    display: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 85%;
+    left: 50%;
+    width: 80%;
+    background-color:  #02C39A;
+    height: 5%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 6vw;
+    font-family: 'Roboto', sans-serif;
+    color: white
+  }
+
+  #backBtn{
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 11%;
+    left: 15%;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    border-bottom: 2px solid black
+  }
+
+  #continueForm{
+    display: none;
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #title {
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 10%;
+    left: 50%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #newIdeaBtn{
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 85%;
+    left: 50%;
+    background-color:  #02C39A;
+    width: 60%;
+    height: 40px;
+    font-size: 29px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: white
+  }
+
+  #ideaDiv{
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 60%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #dashboardDiv{
+    display: block;
+  }
+
+  .ideaBtn{
+    display: block;
+    position: relative;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 15px;
+    height: 40px;
+    left: 50%;
+    top: 20%;
+    margin: 15px 0px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    outline: none;
+    border: none
+  }
+#image{
+  display: none;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 25%;
+  left: 50%;
+  width: 65%;
+  height: 65%;
+}
+#tips{
+  display: none;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 57%;
+  left: 50%;
+  margin: 50px 0px;
+  position: absolute;
+  width: 80%;
+  transform: translate(-50%,-50%);
+  font-size: 25px;
+  font-weight: 200;
+  align-content: center;
+  text-align: left;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+#nextStep{
+  display: none;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 37%;
+  left: 50%;
+  margin: 50px 0px;
+  width: 80%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+#newFormBtn{
+  display: none;
+  text-decoration: none;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  top: 90%;
+  cursor: pointer !important;
+  background-color: #02C39A;
+  border-radius: 15px;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#logo{
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 27px;
+  top:20px;
+  left: 20px;
+  color: black
+}
+
+#menuIcon{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h3{
+  font-size: 30px;
+  font-weight: 200;
+} 
+a {
+  color: black;
+  text-decoration: none;
+}
+#question{
+  position: absolute;
+  width: 80%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top:20%;
+  font-size: 30px;
+  font-weight: 200;
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+}  
+
+#sendBtn {
+  position: relative;
+  display: none;
+  top: 15%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  margin-bottom: 40px;
+  background-color: #02C39A;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  height: 40px;
+  font-size: 27px;
+  outline: none;
+}
+
+#newFormBtn{
+  display: none;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  top: 90%;
+  cursor: pointer !important;
+  background-color: #02C39A;
+  border-radius: 15px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+label{
+  font-size: 23px;
+  margin: 40px;
+  cursor: pointer;
+} 
+#image{
+  display: none;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 25%;
+  left: 50%;
+  width: 65%;
+  height: 65%;
+}
+#tips{
+  display: none;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 57%;
+  left: 50%;
+  margin: 50px 0px;
+  position: absolute;
+  width: 80%;
+  transform: translate(-50%,-50%);
+  font-size: 25px;
+  font-weight: 200;
+  align-content: center;
+  text-align: left;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+#nextStep{
+  display: none;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 37%;
+  left: 50%;
+  margin: 50px 0px;
+  width: 80%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+
+#questionBlock{
+  display: block;
+  position: relative;
+  top: 3%;
+  margin: 15px 10px ;
+}
+
+#formIdeaIndividual{
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
+  margin: 10px;
+}
+
+#titleEnd{
+  position: absolute;
+  font-size: 49px;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+#bodyEnd{
+  position: relative;
+  display: block;
+  font-size: 29px;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top: 200px;
+  width: 80%;
+  text-align: center;
+}
+
+#btnEnd{
+  position: absolute;
+  display: block;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top: 450px;
+  width: 40%;
+  height: 30px;
+  cursor: pointer !important;
+  background-color: #02C39A;
+  border-radius: 15px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+@media ( min-width: 899px ){
+  #newIdeaBtn{
+    width: 19%;
+  }
+
+  #continueFormBtn{
+    width: 29%;
+    font-size: 27px;
+  }
+}

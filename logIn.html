@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./idearLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/logIn.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+    <script src="./scripts/logIn.js"></script>
+    <script src="./scripts/dashboard.js"></script>
+    <title>TRACK</title>
+</head>
+<body>
+    <nav  id="menu" class="navBar">
+            <a href="index.html" id="home"> Início </a>
+            <a href="signUp.html" id="logout"> Cadastre-se </a>
+            <a href="about.html" id="about"> Sobre </a>
+            <a onclick="closeMenu()" id="closeBtn" > X </a>
+    </nav>
+    <a id="logo" href="index.html"> TRACK </a>
+    <a onclick="showMenu()" id="menuIcon">
+        <img style="width: 30px" src="./assets/images/menu.png" alt="Menu Icon"> 
+    </a>
+    <div class="container">
+        <h1> ENTRAR </h1>
+        <input type="email" name="userEmail" id="email" placeholder="E-mail" >
+        <input type="password" name="userPassword" id="password" placeholder="Senha">
+        <button onclick="userLogIn()" id="logInBtn">ENTRAR</button>
+    </div>
+
+</body>
+</html>
